@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Roboto+Slab:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Outfit', sans-serif, 'Roboto Slab', serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.gracias {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#resumen-compra {
+    margin-top: 30px;
+}
+
+#resumen-compra th, #resumen-compra td {
+    padding: 15px;
+}
+
+#resumen-compra img {
+    max-width: 50px;
+}
+
+.footer {
+    display: flex;
+    padding: 30px 0;
+}
+
+@media (max-width: 767px) {
+    .header-img img {
+        width: 150px;
+    }
+
+    .prices {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .price-1,
+    .price-2 {
+        margin-bottom: 10px;
+    }
+
+    .btn-1 {
+        margin-top: 20px;
+    }
+}
