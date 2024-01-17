@@ -1,0 +1,118 @@
+body{
+    height: 100%;
+    background-image: url(img/contacto.jpg);
+    font-family: 'Times New Roman', Times, serif
+}
+
+/*DA FORMATO A LOS FORMULARIOS QUE HAY , INICIAR SESION, REGISTRATE Y FORMULARIO DE CONTACTO*/
+
+.recuadroform{
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+}
+
+
+input{
+    background-color: white;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    background-color: white;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+label{
+    float: center;
+}
+
+
+button{
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    
+    }
+  
+    button:hover{
+      background-color: #6a6a6a;
+    }
+
+  #ojo{
+    background-color: white;
+    border-color: white;
+    width: min-content;
+  }
+
+button p{
+    color: white;
+}
+
+
+    span{
+        color: red;
+    }
+
+    .aviso{
+        font-size: 15px;
+        color:black;
+    }
+
+    h1{
+        font-size: 40px;
+        text-align: left;
+        padding-bottom: 20px;
+        color: black;
+    }
+
+    h3{
+        font-size: 16px;
+        padding-bottom: 30px;
+        color: black;
+    }
+
+    p{
+        font-size: 16px;
+        color:black;
+    }
+
+    *{
+        list-style: none;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+   

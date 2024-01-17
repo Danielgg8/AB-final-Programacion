@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" type="text/css" href="styleproductos.css">
+</head>
+<body>
+    <header>
+        <div class="menu container">
+            <a href="#" class="logo"></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu"><img src="img/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                            <a href="" id="comprar-carrito" class="btn-3">Comprar</a>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="productos">
+        <div class="producto" id="producto1">
+            <img src="img/zapatilla_productos1.webp" alt="Producto 1" id="imagenPrincipal1">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto1')">
+                <img src="img/zapatilla_productos1.webp" class="miniaturaimg" alt="Miniatura 1" data-imagen="img/zapatilla_productos1.webp">
+                <img src="img/zapatilla_productos2.webp" class="miniaturaimg" alt="Miniatura 2" data-imagen="img/zapatilla_productos2.webp">
+                <img src="img/zapatilla_productos3.webp" class="miniaturaimg" alt="Miniatura 3" data-imagen="img/zapatilla_productos3.webp">
+                <img src="img/zapatilla_productos4.webp" class="miniaturaimg" alt="Miniatura 4" data-imagen="img/zapatilla_productos4.webp">
+            </div>
+            <h2>Nike Dunk Low</h2>
+            <p>Hombre</p>
+            <p class="precio">€ 119,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto2">
+            <img src="img/zapatilla_productos8.webp" alt="Producto 2" id="imagenPrincipal2">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto2')">
+                <img src="img/zapatilla_productos8.webp" class="miniaturaimg" alt="Miniatura 5" data-imagen="img/zapatilla_productos8.webp">
+                <img src="img/zapatilla_productos6.webp" class="miniaturaimg" alt="Miniatura 6" data-imagen="img/zapatilla_productos6.webp">
+                <img src="img/zapatilla_productos7.webp" class="miniaturaimg" alt="Miniatura 7" data-imagen="img/zapatilla_productos7.webp">
+                <img src="img/zapatilla_productos5.webp" class="miniaturaimg" alt="Miniatura 8" data-imagen="img/zapatilla_productos5.webp">
+            </div>
+            <h2>Jordan 1 Retro High OG</h2>
+            <p>Hombre</p>
+            <p class="precio">€ 189,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto3">
+            <img src="img/zapatilla_productos9.webp" alt="Producto 3" id="imagenPrincipal3">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto3')">
+                <img src="img/zapatilla_productos9.webp" class="miniaturaimg" alt="Miniatura 9" data-imagen="img/zapatilla_productos9.webp">
+                <img src="img/zapatilla_productos10.webp" class="miniaturaimg" alt="Miniatura 10" data-imagen="img/zapatilla_productos10.webp">
+                <img src="img/zapatilla_productos11.webp" class="miniaturaimg" alt="Miniatura 11" data-imagen="img/zapatilla_productos11.webp">
+                <img src="img/zapatilla_productos12.webp" class="miniaturaimg" alt="Miniatura 12" data-imagen="img/zapatilla_productos12.webp">
+            </div>
+            <h2>Jordan MVP</h2>
+            <p>Hombre</p>
+            <p class="precio">€ 169,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto4">
+            <img src="img/zapatilla_productos13.webp" alt="Producto 4" id="imagenPrincipal4">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto4')">
+                <img src="img/zapatilla_productos13.webp" class="miniaturaimg" alt="Miniatura 13" data-imagen="img/zapatilla_productos13.webp">
+                <img src="img/zapatilla_productos14.webp" class="miniaturaimg" alt="Miniatura 14" data-imagen="img/zapatilla_productos14.webp">
+                <img src="img/zapatilla_productos15.webp" class="miniaturaimg" alt="Miniatura 15" data-imagen="img/zapatilla_productos15.webp">
+                <img src="img/zapatilla_productos16.webp" class="miniaturaimg" alt="Miniatura 16" data-imagen="img/zapatilla_productos16.webp">
+            </div>
+            <h2>Nike Air Max 270</h2>
+            <p>Hombre</p>
+            <p class="precio">€ 110,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto5">
+            <img src="img/zapatilla_productos19.webp" alt="Producto 5" id="imagenPrincipal5">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto5')">
+                <img src="img/zapatilla_productos19.webp" class="miniaturaimg" alt="Miniatura 13" data-imagen="img/zapatilla_productos19.webp">
+                <img src="img/zapatilla_productos18.webp" class="miniaturaimg" alt="Miniatura 14" data-imagen="img/zapatilla_productos18.webp">
+                <img src="img/zapatilla_productos17.webp" class="miniaturaimg" alt="Miniatura 15" data-imagen="img/zapatilla_productos17.webp">
+            </div>
+            <h2>Tommy Jeans Chelsea</h2>
+            <p>Mujer</p>
+            <p class="precio">€ 169,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto6">
+            <img src="img/zapatilla_productos20.webp" alt="Producto 6" id="imagenPrincipal6">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto6')">
+                <img src="img/zapatilla_productos20.webp" class="miniaturaimg" alt="Miniatura 20" data-imagen="img/zapatilla_productos20.webp">
+                <img src="img/zapatilla_productos21.webp" class="miniaturaimg" alt="Miniatura 21" data-imagen="img/zapatilla_productos21.webp">
+                <img src="img/zapatilla_productos22.webp" class="miniaturaimg" alt="Miniatura 22" data-imagen="img/zapatilla_productos22.webp">
+                <img src="img/zapatilla_productos23.webp" class="miniaturaimg" alt="Miniatura 23" data-imagen="img/zapatilla_productos23.webp">
+            </div>
+            <h2>Converse Platform High</h2>
+            <p>Mujer</p>
+            <p class="precio">€ 89,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto7">
+            <img src="img/zapatilla_productos24.webp" alt="Producto 7" id="imagenPrincipal7">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto7')">
+                <img src="img/zapatilla_productos24.webp" class="miniaturaimg" alt="Miniatura 24" data-imagen="img/zapatilla_productos24.webp">
+                <img src="img/zapatilla_productos25.webp" class="miniaturaimg" alt="Miniatura 25" data-imagen="img/zapatilla_productos25.webp">
+                <img src="img/zapatilla_productos26.webp" class="miniaturaimg" alt="Miniatura 26" data-imagen="img/zapatilla_productos26.webp">
+                <img src="img/zapatilla_productos27.webp" class="miniaturaimg" alt="Miniatura 27" data-imagen="img/zapatilla_productos27.webp">
+            </div>
+            <h2>adidas Superstar</h2>
+            <p>Mujer</p>
+            <p class="precio">€ 89,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto8">
+            <img src="img/zapatilla_productos28.webp" alt="Producto 8" id="imagenPrincipal8">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto8')">
+                <img src="img/zapatilla_productos28.webp" class="miniaturaimg" alt="Miniatura 28" data-imagen="img/zapatilla_productos28.webp">
+                <img src="img/zapatilla_productos29.webp" class="miniaturaimg" alt="Miniatura 29" data-imagen="img/zapatilla_productos29.webp">
+                <img src="img/zapatilla_productos30.webp" class="miniaturaimg" alt="Miniatura 30" data-imagen="img/zapatilla_productos30.webp">
+                <img src="img/zapatilla_productos31.webp" class="miniaturaimg" alt="Miniatura 31" data-imagen="img/zapatilla_productos31.webp">
+            </div>
+            <h2>New Balance 1906R</h2>
+            <p>Mujer</p>
+            <p class="precio">€ 159,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto9">
+            <img src="img/sudadera_productos1.webp" alt="Producto 9" id="imagenPrincipal9">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto9')">
+                <img src="img/sudadera_productos1.webp" class="miniaturaimg" alt="Miniatura 32" data-imagen="img/sudadera_productos1.webp">
+                <img src="img/sudadera_productos2.webp" class="miniaturaimg" alt="Miniatura 33" data-imagen="img/sudadera_productos2.webp">
+                <img src="img/sudadera_productos3.webp" class="miniaturaimg" alt="Miniatura 34" data-imagen="img/sudadera_productos3.webp">
+                <img src="img/sudadera_productos4.webp" class="miniaturaimg" alt="Miniatura 35" data-imagen="img/sudadera_productos4.webp">
+            </div>
+            <h2>Banlieue B+</h2>
+            <p>Hombre</p>
+            <p class="precio">€ 84,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto10">
+            <img src="img/pantalon_productos1.webp" alt="Producto 10" id="imagenPrincipal10">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto10')">
+                <img src="img/pantalon_productos1.webp" class="miniaturaimg" alt="Miniatura 36" data-imagen="img/pantalon_productos1.webp">
+                <img src="img/pantalon_productos2.webp" class="miniaturaimg" alt="Miniatura 37" data-imagen="img/pantalon_productos2.webp">
+                <img src="img/pantalon_productos3.webp" class="miniaturaimg" alt="Miniatura 38" data-imagen="img/pantalon_productos3.webp">
+                <img src="img/pantalon_productos4.webp" class="miniaturaimg" alt="Miniatura 39" data-imagen="img/pantalon_productos4.webp">
+            </div>
+            <h2>Nike Swoosh Air</h2>
+            <p>Hombre</p>
+            <p class="precio">€ 74,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto11">
+            <img src="img/sudadera_productos5.webp" alt="Producto 11" id="imagenPrincipal11">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto11')">
+                <img src="img/sudadera_productos5.webp" class="miniaturaimg" alt="Miniatura 40" data-imagen="img/sudadera_productos5.webp">
+                <img src="img/sudadera_productos6.webp" class="miniaturaimg" alt="Miniatura 41" data-imagen="img/sudadera_productos6.webp">
+                <img src="img/sudadera_productos7.webp" class="miniaturaimg" alt="Miniatura 42" data-imagen="img/sudadera_productos7.webp">
+                <img src="img/sudadera_productos8.webp" class="miniaturaimg" alt="Miniatura 43" data-imagen="img/sudadera_productos8.webp">
+            </div>
+            <h2>Jordan Flight</h2>
+            <p>Mujer</p>
+            <p class="precio">€ 89,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+
+        <div class="producto" id="producto12">
+            <img src="img/pantalon_productos5.webp" alt="Producto 12" id="imagenPrincipal12">
+            <div class="miniaturas" onclick="cambiarImagenPrincipal(event, 'producto12')">
+                <img src="img/pantalon_productos5.webp" class="miniaturaimg" alt="Miniatura 44" data-imagen="img/pantalon_productos5.webp">
+                <img src="img/pantalon_productos6.webp" class="miniaturaimg" alt="Miniatura 45" data-imagen="img/pantalon_productos6.webp">
+                <img src="img/pantalon_productos7.webp" class="miniaturaimg" alt="Miniatura 46" data-imagen="img/pantalon_productos7.webp">
+                <img src="img/pantalon_productos8.webp" class="miniaturaimg" alt="Miniatura 47" data-imagen="img/pantalon_productos8.webp">
+            </div>
+            <h2>Nike Tech Fleece</h2>
+            <p>Mujer</p>
+            <p class="precio">€ 109,99</p>
+            <button>Disponible en Tienda</button>
+        </div>
+    </section>
+
+</body>
+<script>
+    function cambiarImagenPrincipal(event, idProducto) {
+        var producto = document.getElementById(idProducto);
+        var imagenPrincipal = producto.querySelector('img');
+        var miniaturas = producto.querySelector('.miniaturas');
+
+        miniaturas.addEventListener('click', function (event) {
+            if (event.target.tagName === 'IMG') {
+                var nuevaImagen = event.target.getAttribute('data-imagen');
+                imagenPrincipal.src = nuevaImagen;
+            }
+        });
+    }
+</script>
+</html>
